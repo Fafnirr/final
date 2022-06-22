@@ -1,0 +1,312 @@
+@font-face {
+    font-family: Radwave;
+    src: url('/fonts/RadwaveFont_Demo.otf');
+}
+
+body{
+    background-color: #1A1A1A !important;
+}
+
+.title{
+    font-family: 'Radwave';
+    color: #FFFFFF;
+    z-index: 99;
+    font-size: 20px;
+}
+
+.empty{
+    -webkit-text-stroke-color:#C73838;
+    -webkit-text-stroke-width: 1px;
+    color: #1A1A1A;
+}
+
+.cont{
+    display: flex;
+    width: 100%;
+}
+
+.titleCont{
+    width: 70%;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+.imgCont{
+    width: 70%;
+    margin-left: -17%;
+    z-index: -1;
+}
+
+.banner{
+    height: 100%;
+    width: 100%;
+}
+
+.login{
+    background-color: #1A1A1A;
+    border: 1px solid #C73838;
+    height: 20px;
+    z-index: 99;
+    font-size: 12px;
+}
+
+a{
+    font-style: "Poppins", sans-serif;
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+}
+
+#topSection{
+    margin-bottom: 3%;
+}
+
+#proImg{
+    margin-left: 20%;
+    height: 150px;
+    width: 50%;
+}
+
+#midContainer{
+    width: 100%;
+}
+
+#midSection{
+    margin-top: 15%;
+    margin-bottom: 7.5%;
+}
+
+#midTextCont{
+    margin-left: 15%;
+}
+
+#midTitle{
+    margin-top: 5%;
+    padding-left: 1em;
+    font-family: 'Radwave';
+    color: #FFFFFF !important;
+    font-size: 16px;
+}
+
+#titleBar{
+    border-left: 5px solid #C73838 !important;
+}
+
+.text{
+    padding-left: 1em;
+    width: 80%;
+    font-family: "Poppins", sans-serif;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+hr {
+    background-color: #C73838 !important;
+    height: 2px !important;
+    width: 80% !important;
+}
+
+.barre{
+    display: flex;
+    justify-content: center;
+}
+
+#bottomCont{
+    margin-top: 7.5%;
+    margin-bottom: 5%;
+}
+
+.card{
+    background-color: #353535 !important;
+    color: #FFFFFF !important;
+    border-radius: 0 !important;
+}
+
+.card h4{
+    color: #C73838 !important;
+    font-family: 'Radwave', sans-serif;
+    font-size: 22px;
+}
+
+.card a{
+    border-radius: 0 !important;
+    border: 1px solid #C73838 !important;
+}
+
+.description{
+    margin-left: 10%;
+    font-family: "Poppins", sans-serif;
+    color: #FFFFFF !important;
+    font-size: 18px !important;
+}
+
+.videoCont{
+    height: 200px;
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.video{
+    height: 100%;
+    width: 80%;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    body{
+        background-color: #1A1A1A !important;
+    }
+
+    .title{
+        font-family: 'Radwave';
+        color: #FFFFFF;
+        z-index: 99;
+        font-size: 5em;
+    }
+    
+    .empty{
+        -webkit-text-stroke-color:#C73838;
+        -webkit-text-stroke-width: 1px;
+        color: #1A1A1A;
+    }
+    
+    .cont{
+        display: flex;
+        width: 100%;
+    }
+    
+    .titleCont{
+        width: 70%;
+        margin-left: 10%;
+        margin-top: 3%;
+    }
+    
+    .imgCont{
+        width: 40%;
+        margin-left: -17%;
+        z-index: -1;
+        height: 400px;
+    }
+    
+    .banner{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .login{
+        background-color: #1A1A1A;
+        border: 1px solid #C73838;
+        height: 45px;
+        z-index: 99;
+        font-size: 20px;
+    }
+
+    a{
+        font-style: "Poppins", sans-serif;
+        color: #FFFFFF !important;
+        text-decoration: none !important;
+    }
+
+    #topSection{
+        margin-bottom: 3%;
+    }
+
+    #proImg{
+        margin-left: 20%;
+        margin-top: 3%;
+        height: 100%;
+    }
+
+    #midContainer{
+        width: 100%;
+        display: flex;
+    }
+
+    #midSection{
+        margin-top: 15%;
+        margin-bottom: 7.5%;
+    }
+
+    #midTextCont{
+        margin-left: 15%;
+    }
+
+    #midTitle{
+        padding-left: 1em;
+        font-family: 'Radwave';
+        color: #FFFFFF !important;
+        font-size: 30px;
+    }
+
+    #titleBar{
+        border-left: 5px solid #C73838 !important;
+    }
+
+    .text{
+        padding-left: 1em;
+        font-size: 20px;
+        font-family: "Poppins", sans-serif;
+        color: #FFFFFF;
+    }
+    
+    hr {
+        background-color: #C73838 !important;
+        height: 2px !important;
+        width: 60% !important;
+        
+    }
+
+    .barre{
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    #bottomCont{
+        margin-top: 7.5%;
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card{
+        background-color: #353535 !important;
+        height: 100%;
+        color: #FFFFFF !important;
+        border-radius: 0 !important;
+    }
+
+    .card h4{
+        color: #C73838 !important;
+        font-family: 'Radwave', sans-serif;
+        font-size: 22px;
+    }
+
+    .card a{
+        border-radius: 0 !important;
+        border: 1px solid #C73838 !important;
+    }
+
+    .description{
+        margin-left: 10%;
+        font-family: "Poppins", sans-serif;
+        color: #FFFFFF !important;
+        font-size: 18px !important;
+    }
+
+    .videoCont{
+        height: 600px;
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .video{
+        height: 100%;
+        width: 80%;
+    }
+}

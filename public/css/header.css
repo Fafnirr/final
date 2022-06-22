@@ -1,0 +1,28 @@
+#logo{
+    width: 90px;
+    height: 70px;
+}
+
+nav{
+    background-color: #1A1A1A;
+    font-family: 'Poppins', sans-serif;
+}
+
+#login{
+    background-color: #1A1A1A;
+    border: 1px solid #C73838;
+    width: 12%;
+}
+
+@media screen and (min-width: 1024px) {
+    #login{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    #login{
+        width: 120px;
+    }
+}
+    
