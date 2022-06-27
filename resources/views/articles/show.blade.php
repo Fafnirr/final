@@ -8,10 +8,10 @@
    
  
         <div class="card-body">
-        <h5 class="card-title">Titre : {{ $articles->titre }}</h5>
-        <p class="card-text">Image : {{ $articles->image }}</p>
-        <p class="card-text">Description : {{ $articles->description }}</p>
-        <p class="card-text">Vidéo : {{ $articles->video }}</p>
+        <h5 class="card-title">Titre : {{ $article->titre }}</h5>
+        <p class="card-text">Image : {{ $article->image }}</p>
+        <p class="card-text">Description : {{ $article->description }}</p>
+        <p class="card-text">Vidéo : {{ $article->video }}</p>
   </div>
        
     <hr/>

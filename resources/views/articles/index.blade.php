@@ -5,7 +5,7 @@
  
             <div class="col-md-9">
                 <div class="card">
-                    <div class="card-header">Contacts</div>
+                    <div class="card-header">Articles</div>
                     <div class="card-body">
                         <a href="{{ url('/createArticle/create') }}" class="btn btn-success btn-sm" title="Add New Article">
                             <i class="fa fa-plus" aria-hidden="true"></i> Add New
@@ -33,7 +33,7 @@
                                         <td>{{ $item->video }}</td>
  
                                         <td>
-                                            <a href="{{ url('/createArticle/' . $item->id) }}" title="View Student"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
+                                            <a href="{{ url('/articleDetail/' . $item->id) }}" title="View Student"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
                                             <a href="{{ url('/createArticle/' . $item->id . '/edit') }}" title="Edit Student"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
  
                                             <form method="POST" action="{{ url('/createArticle' . '/' . $item->id) }}" accept-charset="UTF-8" style="display:inline">

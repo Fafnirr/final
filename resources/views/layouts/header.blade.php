@@ -27,11 +27,20 @@
                             <li class="nav-item">
                                 <a class="nav-link active" href="/tutoriels">Tutoriels</a>
                             </li>
-                            <li class="nav-item">
-                                <button id="login">
-                                    <a class="nav-link active" href="#">Connexion</a>
-                                </button>
-                            </li>
+                            @if(Route::has('login'))
+                                @auth
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="{{ url('/home') }}">Mon compte</a>
+                                        <a class="nav-link active" href="{{ route('logout') }}">Logout</a>
+                                    </li>
+                                @else
+                                    <li class="nav-item">
+                                        <button id="login">
+                                            <a class="nav-link active" href="#">Connexion</a>
+                                        </button>
+                                    </li>
+                                @endauth
+                                
                         </ul>
                     </div>
                 </div>

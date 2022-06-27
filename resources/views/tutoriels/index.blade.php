@@ -5,7 +5,7 @@
  
             <div class="col-md-9">
                 <div class="card">
-                    <div class="card-header">Contacts</div>
+                    <div class="card-header">Tutoriels</div>
                     <div class="card-body">
                         <a href="{{ url('/createTuto/create') }}" class="btn btn-success btn-sm" title="Add New Article">
                             <i class="fa fa-plus" aria-hidden="true"></i> Add New
