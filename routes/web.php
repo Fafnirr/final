@@ -43,4 +43,6 @@ Route::get('/login', function () {
 
 Route::post('/login', [AuthController::class, 'login'])->name('login');
 
-Route::get('/deconnexion', [AuthController::class, 'deconnexion']);
+Route::get('/logout', [AuthController::class, 'deconnexion']);
+
+Route::get('/profil', [AuthController::class, 'showProfil']);
