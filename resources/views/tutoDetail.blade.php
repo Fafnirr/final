@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="{{ asset('css/index.css') }}">
         <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('image/bmx-logo-white.png') }}">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>{{ $article->titre }}</title>
+        <title>{{ $tuto->titre }}</title>
     </head>
     <body>
         @include('layouts.header')
@@ -15,18 +15,18 @@
             <section id="topSection">
                 <div class="cont">
                     <div class="titleCont">
-                        <h1 class="title">{{ $article->titre }}</h1>
+                        <h1 class="title">{{ $tuto->titre }}</h1>
                     </div>
                     <div class="imgCont">
-                        <img src="{{ $article->image }}" alt="" class="banner">
+                        <img src="{{ $tuto->image }}" alt="" class="banner">
                     </div>
                 </div>
             </section>
             <div class="description">
-                <p class="">{{ $article->description }}</p>
+                <p class="">{{ $tuto->description }}</p>
             </div>
             <div class="videoCont">
-                <iframe class="video" src="{{ $article->video }}" frameborder="0" allowfullscreen></iframe>
+                <iframe class="video" src="{{ $tuto->video }}" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
     </body>

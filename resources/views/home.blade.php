@@ -12,15 +12,21 @@
     <body>
         <main>
             @include('layouts.header')
-            
+            @include('cookie-consent::index')
             <section id="topSection">
                 <div class="cont">
                     <div class="titleCont">
                         <h1 class="title">Suivez les <br> dernières infos <br/><span class="empty">compétition</span></h1>
                         <div class="btnCont">
-                            <button class="login">
-                                <a class="logLink" href="/login">Se connecter</a>
-                            </button>
+                            @if(Route::has('login'))
+                                @auth
+                                    
+                                @else
+                                    <button class="login">
+                                        <a class="logLink" href="/login">Se connecter</a>
+                                    </button>
+                                @endauth
+                            @endif
                         </div>
                     </div>
                     <div class="imgCont">

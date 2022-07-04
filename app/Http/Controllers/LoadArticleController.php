@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Article;
+use App\Models\User;
 use App\Models\Tuto;
+use App\Models\Article;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class LoadArticleController extends Controller
 {
@@ -15,14 +17,24 @@ class LoadArticleController extends Controller
      */
     public function index()
     {
+        $user = Auth::user();
+        if($user){
+            $articles = Article::all();
+            return view('articles', compact('articles'));
+        }
         $articles = Article::all();
-        return view('articles', compact('articles'));
+        return view('home')->with('articles', $articles);
     }
 
     public function tutoriels()
     {
-        $tutos = Tuto::all();
-        return view('tutoriels', compact('tutos'));
+        $user = Auth::user();
+        if($user){
+            $tutos = Tuto::all();
+            return view('tutoriels', compact('tutos'));
+        }
+        $articles = Article::all();
+        return view('home')->with('articles', $articles);
     }
 
     /**

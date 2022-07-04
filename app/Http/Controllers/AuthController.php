@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Article;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -45,8 +46,12 @@ class AuthController extends Controller
 
     public function showProfil()
     {
+        $articles = Article::all();
         $user = Auth::user();
-        return view('profil', compact('user'));
+        if($user){
+            return view('profil', compact('user'));
+        }
+        return view('home')->with('articles', $articles);
     }
 
     public function destroy($id) 
