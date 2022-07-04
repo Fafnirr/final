@@ -32,8 +32,6 @@ Route::resource('/createTuto', TutoController::class);
 
 Route::get('tutoDetail/{id}', [TutoController::class, 'show']);
 
-// Route::get('/register', [AuthController::class, 'inscription'])->name('register');
-
 Route::resource('/signup', AuthController::class);
 
 
@@ -46,3 +44,5 @@ Route::post('/login', [AuthController::class, 'login'])->name('login');
 Route::get('/logout', [AuthController::class, 'deconnexion']);
 
 Route::get('/profil', [AuthController::class, 'showProfil']);
+
+Route::get('/delete/{id}', [AuthController::class, 'destroy']);

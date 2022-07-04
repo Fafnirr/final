@@ -19,7 +19,7 @@
                         <h1 class="title">Suivez les <br> dernières infos <br/><span class="empty">compétition</span></h1>
                         <div class="btnCont">
                             <button class="login">
-                                <a class="logLink" href="*">Se connecter</a>
+                                <a class="logLink" href="/login">Se connecter</a>
                             </button>
                         </div>
                     </div>

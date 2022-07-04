@@ -152,6 +152,78 @@ hr {
     width: 80%;
 }
 
+.formSection{
+    width: 100%;
+    border: none !important;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.loginForm{
+    border: 2px solid #FFFFFF !important;
+    color: #FFFFFF;
+    width: 40%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.inputs{
+    width: 100%;
+}
+
+.redButton{
+    color: #C73838 !important;
+}
+
+.textLink{
+    color: #FFFFFF !important;
+    display: flex;
+    justify-content: center;
+}
+
+.formBtnCont{
+    border: 2px solid #C73838 !important;
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    color: #FFFFFF !important;
+    font-weight: 600 !important;
+}
+
+.form-control{
+    border-radius: 0% !important;
+}
+
+.profilTitle{
+    font-family: 'Radwave', sans-serif;
+    color: #FFFFFF !important;
+    font-size: 20px;
+}
+
+.updateForm{
+    color: #FFFFFF;
+}
+
+.welcome{
+    color: #FFFFFF !important;
+    font-size: 20px;
+    margin-left: 15%;
+}
+
+.logoutBtn{
+    border: 2px solid #C73838;
+    background-color: #1A1A1A;
+    margin-left: 15%;
+    font-weight: 600;
+}
+
+
+
 @media screen and (min-width: 600px) {
     #proImg{
         margin-left: 20%;
@@ -316,24 +388,11 @@ hr {
         width: 80%;
     }
 
-    .formSection{
-        width: 100%;
+    .profilTitle{
+        font-family: 'Radwave', sans-serif;
+        color: #FFFFFF !important;
+        font-size: 5em;
         display: flex;
         justify-content: center;
-        margin-top: 3%;
     }
-
-    .loginForm{
-        width: 50%;
-        
-        border: 2px solid #FFFFFF;
-        color: #FFFFFF;
-        justify-content: space-around;
-    }
-
-    .inputs{
-        width: 70%;
-    }
-
-
 }

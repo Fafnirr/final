@@ -13,17 +13,29 @@
         <section class="formSection">
             <form action="{{ url('signup') }}" class="loginForm" method="POST">
                 {!! csrf_field() !!}
-                <div>
-                    <label for="nom">Nom</label><br/>
-                    <input class="inputs" type="text" name="nom" id="nom"><br/>
-                    <label for="prenom">Prénom</label><br/>
-                    <input class="inputs" type="text" name="prenom" id="prenom"><br/>
-                    <label for="email">E-mail</label><br/>
-                    <input class="inputs" type="email" name="email" id="email"><br/>
-                    <label for="password">Mot de passe</label><br/>
-                    <input class="inputs" type="password" name="password" id="password"><br/>
-                <input type="submit" value="Envoyer" name="store">
+                <div class="mb-3">
+                    <label for="nom" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="nom" name="nom">
+                </div>
+                <div class="mb-3">
+                    <label for="prenom" class="form-label">Prénom</label>
+                    <input type="text" class="form-control" id="prenom" name="prenom">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="form-label">Mot de passe</label>
+                    <input type="password" class="form-control" id="password" name="password">
+                </div>
+                <div class="formBtnCont">
+                    <input type="submit" value="S'inscrire" class="btn" name="store">
+                </div>
             </form>
         </section>
+        <p class="textLink">
+            Vous avez déjà un compte ? <a href="{{ url('login') }}" class="redButton">Connectez-vous</a>
+        </p>
     </body>
 </html>

@@ -23,7 +23,6 @@ class AuthController extends Controller
             'prenom' => $request->prenom,
             'email' => $request->email,
             'password' => Hash::make($request->password),
-            'role' => $request->role,
         ]);
         return redirect('login')->with('succes', 'Inscription effectuée avec succes');
     }
@@ -48,6 +47,12 @@ class AuthController extends Controller
     {
         $user = Auth::user();
         return view('profil', compact('user'));
+    }
+
+    public function destroy($id) 
+    {
+        User::destroy($id);
+        return redirect('/signup');
     }
 }
 

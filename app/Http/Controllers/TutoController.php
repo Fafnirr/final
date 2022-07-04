@@ -30,7 +30,7 @@ class TutoController extends Controller
     public function show($id)
     {
         $tuto = Tuto::find($id);
-        return view('tutoDetail')->with('tuto   ', $tuto);
+        return view('tutoDetail')->with('tuto', $tuto);
     }
 
     
