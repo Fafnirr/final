@@ -34,7 +34,7 @@ class AuthController extends Controller
         if (Auth::attempt($request->only('email', 'password'))){
             return redirect('/');
         }
-    return back()->with('erreur', 'Les identifiants renseignés sont incorrecte');
+        return back()->with('erreur', 'Les identifiants renseignés sont incorrecte');
     }
 
     public function deconnexion()

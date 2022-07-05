@@ -56,7 +56,7 @@
                     @foreach ($articles as $article)
                     <div class="col-md-4 col-12 col-lg-3 mb-2">
                         <div class="card">
-                            <img src="{{ $article->image }}" class="card-img-top" id="card-image" alt="...">
+                            <img src="{{ $article->image }}" class="card-img-top" style="height: 18rem" id="card-image" alt="...">
                             <div class="card-body">
                                 <h4 class="card-title">{{ $article->titre }}</h4>
                                 <p class="card-text">{{ $article->description }}</p>
@@ -67,6 +67,7 @@
                     @endforeach
                 </div>
             </section>
+            @include('layouts.footer')
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         </main>
     </body>

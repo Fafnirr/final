@@ -13,7 +13,7 @@
         @include('layouts.header')
         
         <section class="formSection">
-            <form action="{{ url('login') }}" class="loginForm" method="POST">
+            <form action="{{ url('login') }}" class="loginForm" name="loginForm" onsubmit="return(validate());" method="POST">
                 {!! csrf_field() !!}
                 <div class="mb-3">
                     <label for="email" class="form-label">E-mail</label>
@@ -32,5 +32,6 @@
             Vous n'avez pas de compte ? <a href="{{ url('signup') }}" class="redButton">Inscrivez-vous</a>
         </p>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="{{ asset('js/index.js') }}"></script>
     </body>
 </html>
