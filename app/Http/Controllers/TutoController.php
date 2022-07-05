@@ -4,13 +4,20 @@ namespace App\Http\Controllers;
 
 use App\Models\Tuto;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class TutoController extends Controller
 {
     public function index()
     {
-        $tutos = Tuto::all();
-        return view ('tutoriels.index')->with('tutos', $tutos);
+        
+        $user = Auth::user();
+        if($user){
+            $tutos = Tuto::all();
+            return view ('tutoriels.index')->with('tutos', $tutos);
+        }
+        $articles = Tuto::all();
+        return view('home')->with('articles', $articles);
     }
 
     

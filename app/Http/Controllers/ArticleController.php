@@ -10,8 +10,13 @@ class ArticleController extends Controller
   
     public function index()
     {
+        $user = Auth::user();
+        if($user){
+            $articles = Article::all();
+            return view ('articles.index')->with('articles', $articles);
+        }
         $articles = Article::all();
-        return view ('articles.index')->with('articles', $articles);
+        return view('home')->with('articles', $articles);
     }
 
     
@@ -31,7 +36,6 @@ class ArticleController extends Controller
     
     public function show($id)
     {
-        
         $user = Auth::user();
         if($user){
             $article = Article::find($id);
