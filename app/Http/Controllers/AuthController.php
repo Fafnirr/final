@@ -59,5 +59,13 @@ class AuthController extends Controller
         User::destroy($id);
         return redirect('/signup');
     }
+
+    public function update(Request $request, $id)
+    {
+        $user = User::find($id);
+        $input = $request->all();
+        $user->update($input);
+        return view('profil');  
+    }
 }
 

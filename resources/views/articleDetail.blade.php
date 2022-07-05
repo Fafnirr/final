@@ -18,12 +18,12 @@
                         <h1 class="title">{{ $article->titre }}</h1>
                     </div>
                     <div class="imgCont">
-                        <img src="{{ $article->image }}" alt="" class="banner">
+                        <img src="{{ $article->image }}" alt="banner" class="banner">
                     </div>
                 </div>
             </section>
             <div class="description">
-                <p class="">{{ $article->description }}</p>
+                <p>{{ $article->description }}</p>
             </div>
             <div class="videoCont">
                 <iframe class="video" src="{{ $article->video }}" frameborder="0" allowfullscreen></iframe>

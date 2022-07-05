@@ -56,7 +56,7 @@
                     @foreach ($articles as $article)
                     <div class="col-md-4 col-12 col-lg-3 mb-2">
                         <div class="card">
-                            <img src="{{ $article->image }}" class="card-img-top" style="height: 18rem" id="card-image" alt="...">
+                            <img src="{{ $article->image }}" class="card-img-top" style="height: 18rem" id="card-image" alt="articleImg">
                             <div class="card-body">
                                 <h4 class="card-title">{{ $article->titre }}</h4>
                                 <p class="card-text">{{ $article->description }}</p>

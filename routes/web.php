@@ -46,3 +46,5 @@ Route::get('/logout', [AuthController::class, 'deconnexion']);
 Route::get('/profil', [AuthController::class, 'showProfil']);
 
 Route::get('/delete/{id}', [AuthController::class, 'destroy']);
+
+Route::post('/update/{id}', [AuthController::class, 'update']);

@@ -14,7 +14,7 @@
         <h1 class="profilTitle">Profil</h1>
         <p class="welcome"> Bienvenue <span class="empty">{{ $user->nom }}</span> {{ $user->prenom}}</p>
         <section class="formSection">
-            <form class="updateForm" action="" method="">
+            <form class="updateForm" action="{{ url('update/'.$user->id) }}" method="post">
                 <div class="mb-3">
                     <div class="mb-3">
                         <label for="nom" class="form-label">Nom</label>
